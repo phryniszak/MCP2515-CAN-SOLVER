@@ -280,7 +280,7 @@
                     newRow.insertCell(2).appendChild(document.createTextNode(res.tq_per_bit));
                     newRow.insertCell(3).appendChild(document.createTextNode(res.tBS1));
                     newRow.insertCell(4).appendChild(document.createTextNode(res.tBS2));
-                    const diff = Math.round((res.tBS1 + 1) * 100 / res.tq_per_bit);
+                    const diff = Math.round(res.tBS1 * 100 / res.tq_per_bit);
                     newRow.insertCell(5).appendChild(document.createTextNode(diff));
                     newRow.insertCell(6).appendChild(document.createTextNode(sampling_point - diff));
                     rows++;
